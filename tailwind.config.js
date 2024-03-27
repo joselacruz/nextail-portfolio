@@ -11,7 +11,10 @@ module.exports = {
         'bg-secondary': '#fdfdfd', // Fondo secundario
         'bg-ternary': '#f8f9ff', // Fondo ternario
         'text-dark': '#9299af', // Texto en fondos oscuros y títulos
-        transparent: 'transparent',
+        transparent: {
+          DEFAULT: 'transparent',
+          600: 'rgba(255, 255, 255, 0.7)',
+        },
         'text-opacity': 'rgb(9 14 52)',
       },
       boxShadow: {

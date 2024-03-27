@@ -1,7 +1,7 @@
 import Button from '@common/Button';
 export default function Home() {
   return (
-    <section className="flex justify-between items-center py-16 flex-wrap">
+    <section className="flex justify-between items-center py-48 flex-wrap">
       <div className="max-w-md px-3.5 pl-8">
         <h1 className="text-cyan-600 flex flex-col mb-3 font-bold">
           Hey There 👋 I am

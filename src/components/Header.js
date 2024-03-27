@@ -1,10 +1,11 @@
 'use client';
 import { Bars3Icon } from '@heroicons/react/24/solid';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Button from '@common/Button';
 
 export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
+  const [scrollIsTopPage, setScrollIsTopPage] = useState(true);
 
   const navigation = [
     {
@@ -25,12 +26,30 @@ export default function Header() {
     },
   ];
 
+  console.log(scrollIsTopPage);
+  useEffect(() => {
+    function handleScroll() {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition == 0) {
+        setScrollIsTopPage(true);
+      } else {
+        setScrollIsTopPage(false);
+      }
+    }
+
+    document.addEventListener('scroll', handleScroll);
+
+    return () => {
+      document.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const menu = ({ isMobile = false }) => {
     return (
       <ul
         className={`navigation flex justify-center  ${
           isMobile
-            ? 'flex-col absolute top-20 w-56 shadow-custom-shadow p-8 gap-4 right-0'
+            ? 'flex-col absolute top-20 w-56 shadow-custom-shadow p-8 gap-4 right-0  bg-ternary'
             : 'gap-12'
         } `}
       >
@@ -58,7 +77,11 @@ export default function Header() {
   }
 
   return (
-    <header className="header flex justify-between items-center p-8 bg-trasparent md:justify-around">
+    <header
+      className={` z-10 fixed w-full header flex justify-between items-center px-8 py-2 " md:justify-between   ${
+        scrollIsTopPage ? '' : 'border bg-transparent-600 backdrop-blur-md'
+      }`}
+    >
       <a
         href=""
         className="text-3xl font-serif  text-secondary "
