@@ -1,7 +1,7 @@
 'use client';
 import { Bars3Icon } from '@heroicons/react/24/solid';
 import { useState } from 'react';
-import Button from 'app/common/Button';
+import Button from '@common/Button';
 
 export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -61,7 +61,7 @@ export default function Header() {
     <header className="header flex justify-between items-center p-8 bg-trasparent md:justify-around">
       <a
         href=""
-        className="text-3xl font-serif"
+        className="text-3xl font-serif  text-secondary "
       >
         Jose
       </a>

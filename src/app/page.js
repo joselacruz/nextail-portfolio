@@ -1,5 +1,9 @@
-import '@styles/globals.css';
+import Home from '@containers/Home';
 
-export default function Home() {
-  return <></>;
+export default function Main() {
+  return (
+    <div className="max-w-screen-2xl">
+      <Home />
+    </div>
+  );
 }

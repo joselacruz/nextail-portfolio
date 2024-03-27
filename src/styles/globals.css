@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+.circle {
+    background-image: url('/circle.svg');
+    background-position: right;
+}
