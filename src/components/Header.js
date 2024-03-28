@@ -49,8 +49,8 @@ export default function Header() {
       <ul
         className={`navigation flex justify-center  ${
           isMobile
-            ? 'flex-col absolute top-20 w-56 shadow-custom-shadow p-8 gap-4 right-0  bg-ternary'
-            : 'gap-12'
+            ? 'flex-col absolute top-20 w-56 shadow-custom-shadow p-8 gap-4 right-0  bg-ternary md:hidden'
+            : 'gap-12 '
         } `}
       >
         {navigation.map((element, index) => {
@@ -67,7 +67,7 @@ export default function Header() {
         })}
         <Button
           title={'Download CV'}
-          customClasses={'bg-primary text-sm  text-ternary hidden sm:block'}
+          customClasses={'bg-primary text-sm  text-ternary  smd:hidden'}
         />
       </ul>
     );
@@ -88,7 +88,7 @@ export default function Header() {
       >
         Jose
       </a>
-      <nav className="navigation-container md:hidden">
+      <nav className="navigation-container hidden  md:block">
         <ul className="navigation flex justify-center gap-12">
           {navigation.map((element, index) => {
             return (
@@ -107,10 +107,10 @@ export default function Header() {
       <div className="flex gap-4 relative">
         <Button
           title={'Download CV'}
-          customClasses={'bg-primary text-ternary sm:hidden'}
+          customClasses={'bg-primary text-ternary  hidden smd:block md:hidden'}
         />
         <Bars3Icon
-          className=" hidden w-10 text-text-opacity cursor-pointer md:block"
+          className="  w-10 text-text-opacity cursor-pointer md:hidden"
           onClick={toggleMenu}
         />
         {mobileMenu && menu({ isMobile: true })}

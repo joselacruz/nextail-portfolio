@@ -1,16 +1,14 @@
 import Button from '@common/Button';
 export default function Home() {
   return (
-    <section className="flex justify-between items-center py-48 flex-wrap">
-      <div className="max-w-md px-3.5 pl-8">
+    <section className="flex  justify-center items-center py-48 flex-wrap md:justify-between">
+      <div className="max-w-xl px-3.5 ">
         <h1 className="text-cyan-600 flex flex-col mb-3 font-bold">
           Hey There 👋 I am
-          <span className="text-5xl text-secondary font-sans font-bold mt-1">
-            Jose Lacruz
-          </span>
+          <span className="text-xlg">Jose Lacruz</span>
         </h1>
 
-        <h2 className="text-text-secondary mb-5 text-xl">
+        <h2 className="text-text-secondary mb-5 text-large">
           Front-end <span className="text-secondary font-bold ">Developer</span>
         </h2>
         <p className="text-text-secondary mb-12">
@@ -31,7 +29,7 @@ export default function Home() {
         </div>
       </div>
       <div
-        className="relative overflow-hidden w-3/6 flex justify-start  md:w-full "
+        className="relative overflow-hidden w-full flex justify-center  md:w-3/6  "
         style={{ height: '508px' }}
       >
         <span className="circle inline-block w-full h-full bg-no-repeat absolute top-3 left-0"></span>

@@ -6,3 +6,13 @@
     background-image: url('/circle.svg');
     background-position: right;
 }
+
+.text-xlg {
+    @apply  text-3xl text-secondary font-sans font-bold mt-1 sm:text-5xl
+}
+.text-large {
+    @apply text-lg sm:text-xl
+}
+.IconsSocialNetworks:hover  svg {
+    @apply fill-slate-50 
+}

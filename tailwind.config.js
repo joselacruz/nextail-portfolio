@@ -21,8 +21,10 @@ module.exports = {
         'custom-shadow': '0px 5px 10px rgba(4, 10, 34, 0.2)',
       },
       screens: {
-        sm: { max: '539px' },
-        md: { max: '960px' },
+        sm: { min: '539px' },
+        smd: { min: '720px' },
+        md: { min: '960px' },
+        lg: { min: '1100px' },
       },
     },
   },
