@@ -16,3 +16,7 @@
 .IconsSocialNetworks:hover  svg {
     @apply fill-slate-50 
 }
+
+.active {
+    @apply bg-primary text-ternary
+}
