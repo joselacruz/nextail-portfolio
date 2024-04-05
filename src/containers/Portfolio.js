@@ -1,8 +1,23 @@
-import React from 'react';
+'use client';
+import { getProject } from 'app/api';
+import React, { useState } from 'react';
+import CardProject from '@components/CardProject';
+import ProjectFilter from '@components/ProjectFilter';
 
 export default function Portfolio() {
+  const allProjects = getProject.allProjects();
+  const [projects, setProjects] = useState(allProjects);
+
+  function updateProjects(newValue) {
+    if (newValue) {
+      setProjects(allProjects.filter((project) => project.group === newValue));
+    } else {
+      setProjects(allProjects);
+    }
+  }
+
   return (
-    <section className="pt-28 grid justify-center justify-items-center">
+    <section className="pt-28 grid justify-center justify-items-center bg-bg-ternary">
       <div className="max-w-xl">
         <h3 className="text-xlg text-center mb-5 ">Recent Works</h3>
         <p className="text-text-secondary text-center mb-12">
@@ -10,48 +25,21 @@ export default function Portfolio() {
           skills in web development and user interface design.
         </p>
       </div>
+      <ProjectFilter
+        projects={allProjects}
+        updateProjects={updateProjects}
+      />
 
-      <div className="mb-12">
-        <button className=" active text-text-secondary px-6 py-2 rounded-full mr-2.5">
-          All
-        </button>
-        <button className=" text-text-secondary  px-6 py-2 rounded-full mr-2.5">
-          VanillaJS
-        </button>
-        <button className=" text-text-secondary  px-6 py-2 rounded-full mr-2.5">
-          React
-        </button>
-        <button className=" text-text-secondary  px-6 py-2 rounded-full mr-2.5">
-          NextJS
-        </button>
-      </div>
+      {/* Project List */}
       <div className="max-w-1/2 flex flex-wrap justify-center ">
-        <article className="max-w-lg px-4 mb-12">
-          <figure className="mb-8">
-            <img
-              src="https://portfolio-tailwind.preview.uideck.com/demos/personal/images/portfolio-01.jpg"
-              alt=""
-            />
-          </figure>
-          <h3 className="text-secondary text-xl mb-3 ">Startup landing page</h3>
-          <p className="text-base text-text-secondary">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-            vitae dolor ultrices libero.
-          </p>
-        </article>
-        <article className="max-w-lg px-4 mb-12">
-          <figure className="mb-8">
-            <img
-              src="https://portfolio-tailwind.preview.uideck.com/demos/personal/images/portfolio-01.jpg"
-              alt=""
-            />
-          </figure>
-          <h3 className="text-secondary text-xl mb-3 ">Startup landing page</h3>
-          <p className="text-base text-text-secondary">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-            vitae dolor ultrices libero.
-          </p>
-        </article>
+        {projects.map((project, index) => (
+          <CardProject
+            key={index}
+            title={project.title}
+            content={project.content}
+            image={project.img}
+          />
+        ))}
       </div>
     </section>
   );
