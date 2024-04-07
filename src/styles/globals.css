@@ -20,3 +20,11 @@
 .active {
     @apply bg-primary text-ternary
 }
+.project-link-container:hover{
+
+@apply text-primary
+}
+.project-link-container:hover svg{
+    @apply fill-primary
+    }
+  

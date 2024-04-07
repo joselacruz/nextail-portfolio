@@ -5,6 +5,9 @@ const projects = [
       'Building a website with a mobile-optimized design and development approach before tackling desktop versions using "Mobile first".',
     group: 'vanillajs',
     img: 'https://i.ibb.co/yn9tkbp/batatabit.png',
+
+    code: 'https://github.com/joselacruz/mobile-frist',
+    live: 'https://joselacruz.github.io/mobile-frist',
   },
   {
     title: 'Todo List',
@@ -12,6 +15,8 @@ const projects = [
       'I use React to create a responsive interface that allows adding tasks. I use React components and concepts to add, remove, and mark tasks as complete.',
     group: 'react',
     img: 'https://i.ibb.co/s27Qf36/todo-list.png',
+    code: 'https://github.com/joselacruz/Todo-list',
+    live: 'https://joselacruz.github.io/Todo-list',
   },
   {
     title: 'Rank Pelis',
@@ -19,18 +24,22 @@ const projects = [
       'Implementation of a movie site using HTML, CSS, and JavaScript that consume the API (themoviedb) and show the movies organized by category and popularity.',
     group: 'vanillajs',
     img: 'https://i.ibb.co/6F32tkS/rank-pelis.png',
+    code: 'https://github.com/joselacruz/Rank-pelis',
+    live: 'https://joselacruz.github.io/Rank-pelis',
   },
   {
     title: 'Mood Tracker',
     content:
-      'This application serves as a Mood Tracker, allowing you to log your emotions and diary entries. It also incorporates sentiment analysis through OpenAI  artificial intelligence API to determine if your written content aligns with the selected emotion.',
-    group: 'vanillajs',
+      'Emotional tracking application that includes sentiment analysis using the OpenAI artificial intelligence API.',
+    group: 'react',
     img: 'https://i.ibb.co/09MfM09/mood-track.png',
+    code: 'https://github.com/joselacruz/moodTracker',
+    live: 'https://jocular-queijadas-9d022c.netlify.app',
   },
   {
     title: 'Easy Sale Register',
     content:
-      'is a web application designed to help you register the products you want to sell. The app allows you to enter product details such as title, product URL, price, sales price, description, and images. Data is stored in Firebase, and images are uploaded using the ImgBB',
+      'Web application to register products for sale with storage in Firebase and uploading images using ImgBB.',
     group: 'react',
     img: 'https://i.ibb.co/Lt7H2cC/easy-sale.png',
     code: 'https://github.com/joselacruz/easySaleRegister',
@@ -39,7 +48,7 @@ const projects = [
   {
     title: 'Raking Radios',
     content:
-      'Ranking Radios is a website that uses the Radio Info API  to display radio stations. It also uses Firebase to store user data, such as recently visited radio stations and those marked as favorites. It does not require authentication, since a unique ID is created using the UUID library and saved in the browsers LocalStorage.',
+      'Website that displays radio stations using the Radio Info API and saves user data to Firebase.',
     group: 'react',
     img: 'https://i.ibb.co/0jJGpjL/radios.png',
     code: 'https://github.com/joselacruz/ranking-radios',
@@ -48,7 +57,7 @@ const projects = [
   {
     title: 'Rifa Live',
     content:
-      'Rifa Live is a web application designed to help sell 200-number raffles. The application offers an interface to display the prize and the 200 available numbers. Users can view the availability of numbers and purchase one by clicking the corresponding button. Once a number is available, clicking on it will send a message to the raffle administrator via WhatsApp to complete the purchase',
+      'Aplicación web para vender rifas de 200 números con función de compra y notificaciones vía WhatsApp.',
     group: 'react',
     img: 'https://i.ibb.co/nnjsPmc/rifa-live.png',
     code: 'https://github.com/joselacruz/rifaLive',
@@ -60,6 +69,8 @@ const projects = [
       'In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io.',
     group: 'vanillajs',
     img: 'https://i.ibb.co/zWMJXkP/recipe-blog.png',
+    code: 'https://github.com/joselacruz/recipe-blog-mobile',
+    live: 'https://joselacruz.github.io/recipe-blog-mobile/recipes.html',
   },
   {
     title: 'Checkout',
@@ -67,6 +78,8 @@ const projects = [
       'In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io.',
     group: 'vanillajs',
     img: 'https://i.ibb.co/ChBwfxg/ckeckout.png',
+    code: 'https://github.com/joselacruz/checkout-responsive',
+    live: 'https://joselacruz.github.io/checkout-responsive',
   },
   {
     title: 'Edie Homepage',
@@ -74,6 +87,8 @@ const projects = [
       'In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io.',
     group: 'vanillajs',
     img: 'https://i.ibb.co/zbN07Sy/eddie.png',
+    code: 'https://github.com/joselacruz/Edie-homepage',
+    live: 'https://joselacruz.github.io/Edie-homepage/',
   },
   {
     title: 'Interior consultant',
@@ -81,6 +96,8 @@ const projects = [
       'In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io',
     group: 'vanillajs',
     img: 'https://i.ibb.co/NYvXK6t/interior.png',
+    code: 'https://github.com/joselacruz/interior-consultant',
+    live: 'https://joselacruz.github.io/interior-consultant/dev.html',
   },
 ];
 export const getProject = {

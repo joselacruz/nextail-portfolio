@@ -31,13 +31,11 @@ export default function Portfolio() {
       />
 
       {/* Project List */}
-      <div className="max-w-1/2 flex flex-wrap justify-center ">
+      <div className="max-w-1/2 flex flex-wrap justify-center  smd:grid smd:grid-cols-2 gap-5">
         {projects.map((project, index) => (
           <CardProject
             key={index}
-            title={project.title}
-            content={project.content}
-            image={project.img}
+            project={project}
           />
         ))}
       </div>
