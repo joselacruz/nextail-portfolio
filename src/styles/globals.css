@@ -27,4 +27,6 @@
 .project-link-container:hover svg{
     @apply fill-primary
     }
-  
+.container-right{
+    left: -1px;
+}

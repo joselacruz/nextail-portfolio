@@ -1,4 +1,5 @@
 import About from '@containers/About';
+import Experience from '@containers/Experience';
 import Home from '@containers/Home';
 import Portfolio from '@containers/Portfolio';
 export default function Main() {
@@ -7,6 +8,7 @@ export default function Main() {
       <Home />
       <About />
       <Portfolio />
+      <Experience />
     </div>
   );
 }
