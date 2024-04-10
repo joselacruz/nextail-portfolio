@@ -24,9 +24,12 @@ export default function Header() {
       href: '#experience',
       title: 'Experience',
     },
+    {
+      href: '#contact',
+      title: 'Contact',
+    },
   ];
 
-  console.log(scrollIsTopPage);
   useEffect(() => {
     function handleScroll() {
       const scrollPosition = window.scrollY;
