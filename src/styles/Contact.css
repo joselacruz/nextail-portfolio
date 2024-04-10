@@ -1,0 +1,94 @@
+.button-container{
+position: relative;
+ width: 60px;
+ height: 60px;
+ margin: 0 5px;
+ border-radius: 50px;
+ cursor: pointer;
+ box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+ transition: all 0.3s ease-out;
+ overflow: hidden;
+ @apply bg-ternary
+}
+.button-container:hover{
+  overflow: visible;
+}
+
+.button-container .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+ width: 60px;
+ height: 60px;
+ border-radius: 50px;
+ box-sizing: border-box; 
+ position: relative;
+}
+.button-container span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  text-transform: capitalize;
+}
+
+.button-container:hover{
+    width: 200px;
+    padding-inline-start: 65px;
+
+}
+
+.button-container:active{
+  opacity: 0.5;
+}
+
+.button-container:hover svg{
+  fill: white;
+}
+
+.button-container-0 span{
+color: #0a66c2 ;
+}
+
+
+.button-container:hover .icon-container{
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  height: 65px;
+  width: 65px;
+  z-index: 1;
+  overflow: visible;
+}
+
+.button-container-0:hover  .icon-container{
+  background-color: #0a66c2 ;
+
+}
+
+
+.button-container-1 span{
+  color: #0d1117 ;
+  }
+  
+  .button-container-1:hover  .icon-container{
+    background-color: #0d1117 ;
+  }
+
+
+  .button-container-2 span{
+    color: #e94134 ;
+    }
+    
+    .button-container-2:hover  .icon-container{
+      background-color: #e94134 ;
+    }
+
+    .button-container-3 span{
+      color: #29b2fe ;
+      }
+      
+      .button-container-3:hover  .icon-container{
+        background-color: #29b2fe ;
+      }
