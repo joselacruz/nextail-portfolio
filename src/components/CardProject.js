@@ -24,10 +24,12 @@ export default function CardProject({ project }) {
           className="object-cover"
         />
       </figure>
-      <h3 className="text-text-opacity text-xl mb-3 hover:text-primary hover:cursor-pointer font-bold">
+      <h3 className="text-text-opacity text-xl mb-3 hover:text-primary hover:cursor-pointer font-semibold">
         {title}
       </h3>
-      <p className="text-base text-text-secondary font-medium ">{content}</p>
+      <p className="text-base text-text-secondary font-medium h-20 ">
+        {content}
+      </p>
       <div className="mt-5 border-t  grid grid-cols-2 items-center text-text-secondary ">
         <div
           className="project-link-container border-r flex py-4 justify-center items-center gap-4 cursor-pointer"
