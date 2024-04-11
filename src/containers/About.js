@@ -9,7 +9,7 @@ export default function About() {
         <h2 className="text-xlg mb-5">
           Minimalist design for an optimal experience
         </h2>
-        <p className="text-text-secondary  max-w-xl ">
+        <p className="text-text-secondary  max-w-xl font-medium ">
           I am passionate about web development with a focus on minimalist and
           functional design. I firmly believe in the importance of simplicity in
           design to ensure an optimal user experience. My goal is to create web
@@ -20,7 +20,7 @@ export default function About() {
         <h3 className="text-2xl sm:text-3xl text-secondary font-bold mb-6">
           Connect With Me
         </h3>
-        <p className="text-text-secondary text-base  mb-10">
+        <p className="text-text-secondary text-base mb-10 font-medium">
           I'd be delighted to connect with you and discuss more about my
           projects and experiences! Feel free to reach out to me through any of
           the following channels.

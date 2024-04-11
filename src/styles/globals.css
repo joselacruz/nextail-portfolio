@@ -8,7 +8,7 @@
 }
 
 .text-xlg {
-    @apply  text-3xl text-secondary font-sans font-bold mt-1 sm:text-5xl
+    @apply  text-3xl text-text-opacity  font-sans font-bold mt-1 sm:text-5xl
 }
 .text-large {
     @apply text-lg sm:text-xl

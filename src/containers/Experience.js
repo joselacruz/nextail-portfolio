@@ -107,7 +107,7 @@ export default function Experience() {
                 >
                   <LinedCircle />
                 </div>
-                <p className="mb-1  text-xl text-secondary  font-semibold">
+                <p className="mb-1  text-xl text-text-opacity  font-semibold">
                   {course.title}
                 </p>
                 <p className="text-text-secondary font-semibold text-lg mb-3">

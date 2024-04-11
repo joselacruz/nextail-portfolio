@@ -20,7 +20,7 @@ export default function Portfolio() {
     <section className="pt-28 grid justify-center justify-items-center bg-bg-ternary">
       <div className="max-w-xl">
         <h3 className="text-xlg text-center mb-5 ">Recent Works</h3>
-        <p className="text-text-secondary text-center mb-12">
+        <p className="text-text-secondary text-center mb-12 font-medium">
           Discover some of my most recent projects that showcase my passion and
           skills in web development and user interface design.
         </p>

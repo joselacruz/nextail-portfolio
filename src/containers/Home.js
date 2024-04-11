@@ -8,10 +8,10 @@ export default function Home() {
           <span className="text-xlg">Jose Lacruz</span>
         </h1>
 
-        <h2 className="text-text-secondary mb-5 text-large">
+        <h2 className="text-text-secondary mb-5 text-large font-medium">
           Front-end <span className="text-secondary font-bold ">Developer</span>
         </h2>
-        <p className="text-text-secondary mb-12">
+        <p className="text-text-secondary mb-12 font-medium">
           I am a motivated developer, willing to learn and create Outstanding UI
           apps. My approach is focuses on combining creativity and technology to
           develop innovative solutions that solve problems and improve user
