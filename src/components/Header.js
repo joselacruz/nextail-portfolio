@@ -2,6 +2,7 @@
 import { Bars3Icon } from '@heroicons/react/24/solid';
 import { useEffect, useState } from 'react';
 import Button from '@common/Button';
+import BrandHeader from '@components/BrandHeader';
 
 export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -85,12 +86,7 @@ export default function Header() {
         scrollIsTopPage ? '' : 'border bg-transparent-600 backdrop-blur-md'
       }`}
     >
-      <a
-        href=""
-        className="text-3xl font-serif  text-secondary "
-      >
-        Jose
-      </a>
+      <BrandHeader />
       <nav className="navigation-container hidden  md:block">
         <ul className="navigation flex justify-center gap-12">
           {navigation.map((element, index) => {
