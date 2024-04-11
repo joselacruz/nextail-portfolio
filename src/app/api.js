@@ -57,7 +57,7 @@ const projects = [
   {
     title: 'Rifa Live',
     content:
-      'Aplicación web para vender rifas de 200 números con función de compra y notificaciones vía WhatsApp.',
+      'Web application to sell raffles of 200 numbers with purchase function and notifications via WhatsApp.',
     group: 'react',
     img: 'https://i.ibb.co/nnjsPmc/rifa-live.png',
     code: 'https://github.com/joselacruz/rifaLive',
