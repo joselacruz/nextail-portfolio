@@ -1,7 +1,10 @@
 import Button from '@common/Button';
 export default function Home() {
   return (
-    <section className="flex  justify-center items-center py-44 flex-wrap md:justify-between">
+    <section
+      className="flex  justify-center items-center pt-44 flex-wrap md:justify-between"
+      id="home"
+    >
       <div className="max-w-xl px-3.5 md:max-w-md  lg:max-w-xl">
         <h1 className="text-cyan-600 flex flex-col mb-3 font-bold">
           Hey There 👋 I am

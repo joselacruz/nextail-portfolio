@@ -17,7 +17,10 @@ export default function Portfolio() {
   }
 
   return (
-    <section className="pt-28 grid justify-center justify-items-center bg-bg-ternary">
+    <section
+      className="pt-28 grid justify-center justify-items-center bg-bg-ternary"
+      id="portfolio"
+    >
       <div className="max-w-xl">
         <h3 className="text-xlg text-center mb-5 ">Recent Works</h3>
         <p className="text-text-secondary text-center mb-12 font-medium">

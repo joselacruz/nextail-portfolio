@@ -80,6 +80,18 @@ export default function Header() {
     setMobileMenu(!mobileMenu);
   }
 
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleClick = (e, id) => {
+    e.preventDefault();
+    scrollToSection(id.toLowerCase());
+  };
+
   return (
     <header
       className={` z-10 fixed w-full header flex justify-between items-center px-8 py-2 " md:justify-between   ${
@@ -95,6 +107,7 @@ export default function Header() {
                 <a
                   className="text-text-opacity text-base  hover:text-primary "
                   href={element.href}
+                  onClick={(e) => handleClick(e, element.title)}
                 >
                   {element.title}
                 </a>

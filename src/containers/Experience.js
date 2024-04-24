@@ -67,7 +67,10 @@ export default function Experience() {
   }
 
   return (
-    <section className="pt-28 grid justify-center bg-ternary pb-16 border-b border-gray-300">
+    <section
+      className="pt-28 grid justify-center bg-ternary pb-16 border-b border-gray-300"
+      id="experience"
+    >
       <div className="max-w-xl px-4 justify-self-center">
         <p className="text-primary font-bold text-center text-lg ">
           Educational and Development Experience

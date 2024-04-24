@@ -3,7 +3,10 @@ import React from 'react';
 
 export default function About() {
   return (
-    <section className="flex flex-wrap justify-center  items-center pb-28 md:justify-between  md:flex-nowrap border-b ">
+    <section
+      className="pt-36 flex flex-wrap justify-center  items-center pb-28 md:justify-between  md:flex-nowrap border-b "
+      id="about"
+    >
       <div className=" px-4 mb-8 max-w-xl">
         <span className="text-large text-primary font-bold">ABOUT ME</span>
         <h2 className="text-xlg mb-5">
