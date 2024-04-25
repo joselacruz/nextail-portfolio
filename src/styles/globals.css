@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+    :root {
+  --primary :#4a6cf7;
+  --secondary : #090e34;
+  --text-secondary: #959cb1;
+  --bg-secondary:#fdfdfd;
+  --bg-ternary:#f8f9ff;
+  --text-dark:#9299af;
+  --transparent-600: rgba(255, 255, 255, 0.7);
+  --text-opacity: rgb(9 14 52);
+  --custom-shadow: 0px 5px 10px rgba(4, 10, 34, 0.2)
+
+
+    }
+  
+      :root[data-theme="dark"] {
+        --primary :#202124;
+        --secondary : #000000;
+      }
+    
+}
+
 .circle {
     background-image: url('/circle.svg');
     background-position: right;

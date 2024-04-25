@@ -3,6 +3,7 @@ import { Bars3Icon } from '@heroicons/react/24/solid';
 import { useEffect, useState } from 'react';
 import Button from '@common/Button';
 import BrandHeader from '@components/BrandHeader';
+import ThemeToogle from './ThemeToogle';
 
 export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -116,6 +117,9 @@ export default function Header() {
           })}
         </ul>
       </nav>
+
+      <ThemeToogle />
+
       <div className="flex gap-4 relative">
         <Button
           title={'Download CV'}

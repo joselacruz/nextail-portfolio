@@ -4,21 +4,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#4a6cf7', // Utilizado para botones
-        secondary: '#090e34', // Utilizado para texto en el header, títulos del sitio web y botones secundarios
+        primary: 'var(--primary)', // Utilizado para botones
+        secondary: 'var(--secondary)', // Utilizado para texto en el header, títulos del sitio web y botones secundarios
         ternary: '#ffffff', // Utilizado para texto en fondo oscuro y botones con el color primario
-        'text-secondary': '#959cb1', // Texto secundario
-        'bg-secondary': '#fdfdfd', // Fondo secundario
-        'bg-ternary': '#f8f9ff', // Fondo ternario
-        'text-dark': '#9299af', // Texto en fondos oscuros y títulos
+        'text-secondary': 'var(--text-secondary)', // Texto secundario
+        'bg-secondary': 'var(--bg-secondary)', // Fondo secundario
+        'bg-ternary': 'var(--bg-ternary)', // Fondo ternario
+        'text-dark': 'var(--text-dark)', // Texto en fondos oscuros y títulos
         transparent: {
           DEFAULT: 'transparent',
-          600: 'rgba(255, 255, 255, 0.7)',
+          600: 'var(--transparent-600)',
         },
-        'text-opacity': 'rgb(9 14 52)',
+        'text-opacity': 'var(--text-opacity)',
       },
       boxShadow: {
-        'custom-shadow': '0px 5px 10px rgba(4, 10, 34, 0.2)',
+        'custom-shadow': 'var(--custom-shadow)',
       },
       screens: {
         sm: { min: '539px' },
