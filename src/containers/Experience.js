@@ -68,7 +68,7 @@ export default function Experience() {
 
   return (
     <section
-      className="pt-28 grid justify-center bg-ternary pb-16 border-b border-gray-300"
+      className="pt-28 grid justify-center bg-bg-ternary pb-16 border-b border-border-color"
       id="experience"
     >
       <div className="max-w-xl px-4 justify-self-center">
@@ -92,7 +92,7 @@ export default function Experience() {
           if (wMax960Px) {
             return (
               <div
-                className={`max-w-lg  pb-11  border-gray-300 relative  ${
+                className={`max-w-lg  pb-11  border-border-color relative  ${
                   alignLeftContainers
                     ? ` pr-12 border-r text-end  col-start-1 `
                     : `pl-11 border-l col-start-2 container-right`

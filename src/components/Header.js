@@ -96,7 +96,9 @@ export default function Header() {
   return (
     <header
       className={` z-10 fixed w-full header flex justify-between items-center px-8 py-2 " md:justify-between   ${
-        scrollIsTopPage ? '' : 'border bg-transparent-600 backdrop-blur-md'
+        scrollIsTopPage
+          ? ''
+          : 'border-b border-border-color bg-transparent-600 backdrop-blur-md'
       }`}
     >
       <BrandHeader />

@@ -4,7 +4,7 @@ import React from 'react';
 export default function About() {
   return (
     <section
-      className="pt-36 flex flex-wrap justify-center  items-center pb-28 md:justify-between  md:flex-nowrap border-b "
+      className="bg-bg-secondary pt-36 flex flex-wrap justify-center  items-center pb-28 md:justify-between  md:flex-nowrap border-b  border-border-color"
       id="about"
     >
       <div className=" px-4 mb-8 max-w-xl">
@@ -20,7 +20,7 @@ export default function About() {
         </p>
       </div>
       <div className="px-4  max-w-xl md:max-w-xl">
-        <h3 className="text-2xl sm:text-3xl text-secondary font-bold mb-6">
+        <h3 className="text-2xl sm:text-3xl text-text-opacity font-bold mb-6">
           Connect With Me
         </h3>
         <p className="text-text-secondary text-base mb-10 font-medium">

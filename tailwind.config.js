@@ -11,6 +11,7 @@ module.exports = {
         'bg-secondary': 'var(--bg-secondary)', // Fondo secundario
         'bg-ternary': 'var(--bg-ternary)', // Fondo ternario
         'text-dark': 'var(--text-dark)', // Texto en fondos oscuros y títulos
+        'border-color': 'var(--border-color)',
         transparent: {
           DEFAULT: 'transparent',
           600: 'var(--transparent-600)',

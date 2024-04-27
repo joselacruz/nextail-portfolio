@@ -30,9 +30,9 @@ export default function CardProject({ project }) {
       <p className="text-base text-text-secondary font-medium h-20 ">
         {content}
       </p>
-      <div className="mt-5 border-t  grid grid-cols-2 items-center text-text-secondary ">
+      <div className="mt-5 border-t border-border-color grid grid-cols-2 items-center text-text-secondary ">
         <div
-          className="project-link-container border-r flex py-4 justify-center items-center gap-4 cursor-pointer"
+          className="project-link-container border-r border-border-color flex py-4 justify-center items-center gap-4 cursor-pointer"
           onClick={() => {
             handleLocation(linkPreview);
           }}

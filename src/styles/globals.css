@@ -2,53 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    :root {
-  --primary :#4a6cf7;
-  --secondary : #090e34;
-  --text-secondary: #959cb1;
-  --bg-secondary:#fdfdfd;
-  --bg-ternary:#f8f9ff;
-  --text-dark:#9299af;
-  --transparent-600: rgba(255, 255, 255, 0.7);
-  --text-opacity: rgb(9 14 52);
-  --custom-shadow: 0px 5px 10px rgba(4, 10, 34, 0.2)
+@layer base {
+  :root {
+    --primary: #4a6cf7;
+    --secondary: #090e34;
+    --text-secondary: #959cb1;
+    --bg-secondary: #fdfdfd;
+    --bg-ternary: #f8f9ff;
+    --text-dark: #9299af;
+    --transparent-600: rgba(255, 255, 255, 0.7);
+    --text-opacity: rgb(9 14 52);
+    --custom-shadow: 0px 5px 10px rgba(4, 10, 34, 0.2);
+    --border-color: #e5e7eb;
+  }
 
-
-    }
-  
-      :root[data-theme="dark"] {
-        --primary :#202124;
-        --secondary : #000000;
-      }
-    
+  :root[data-theme='dark'] {
+    --primary: #ca3e47;
+    --secondary: #300b0c;
+    --bg-secondary: #313131;
+    --bg-ternary: #171010;
+    --transparent-600: rgba(49, 49, 49, 0.7);
+    --text-opacity: #ffffff;
+    --custom-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    --border-color: #362222;
+  }
 }
 
 .circle {
-    background-image: url('/circle.svg');
-    background-position: right;
+  background-image: url('/circle.svg');
+  background-position: right;
 }
 
 .text-xlg {
-    @apply  text-3xl text-text-opacity  font-sans font-bold mt-1 sm:text-5xl
+  @apply text-3xl text-text-opacity  font-sans font-bold mt-1 sm:text-5xl;
 }
 .text-large {
-    @apply text-lg sm:text-xl
+  @apply text-lg sm:text-xl;
 }
-.IconsSocialNetworks:hover  svg {
-    @apply fill-slate-50 
+.IconsSocialNetworks:hover svg {
+  @apply fill-slate-50;
 }
 
 .active {
-    @apply bg-primary text-ternary
+  @apply bg-primary text-ternary;
 }
-.project-link-container:hover{
-
-@apply text-primary
+.project-link-container:hover {
+  @apply text-primary;
 }
-.project-link-container:hover svg{
-    @apply fill-primary
-    }
-.container-right{
-    left: -1px;
+.project-link-container:hover svg {
+  @apply fill-primary;
+}
+.container-right {
+  left: -1px;
 }

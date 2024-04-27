@@ -1,10 +1,11 @@
 'use client';
 import { svgArray } from '@utils/svgList';
 import '@styles/Contact.css';
+
 export default function Contact() {
   return (
     <section
-      className="grid justify-center bg-neutral-200 py-28"
+      className="grid justify-center bg-border-color py-28"
       id="contact"
     >
       <div className="max-w-xl px-4 justify-self-center mb-12">

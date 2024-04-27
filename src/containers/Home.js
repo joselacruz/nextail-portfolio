@@ -2,11 +2,11 @@ import Button from '@common/Button';
 export default function Home() {
   return (
     <section
-      className="flex  justify-center items-center pt-44 flex-wrap md:justify-between"
+      className="flex  justify-center items-center pt-44 flex-wrap md:justify-between bg-bg-secondary"
       id="home"
     >
       <div className="max-w-xl px-3.5 md:max-w-md  lg:max-w-xl">
-        <h1 className="text-cyan-600 flex flex-col mb-3 font-bold">
+        <h1 className="text-primary flex flex-col mb-3 font-bold opacity-80">
           Hey There 👋 I am
           <span className="text-xlg">Jose Lacruz</span>
         </h1>
@@ -37,7 +37,7 @@ export default function Home() {
       >
         <span className="circle inline-block w-full h-full bg-no-repeat absolute top-3 left-0"></span>
         <img
-          src="images/profile1.png"
+          src="images/profile.png"
           alt="imagen profile jose lacruz"
           className="relative object-cover"
         />
