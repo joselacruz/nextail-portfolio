@@ -49,12 +49,12 @@ export default function Header() {
     };
   }, []);
 
-  const menu = ({ isMobile = false }) => {
+  const renderMenu = ({ isMobile }) => {
     return (
       <ul
         className={`navigation flex justify-center  ${
           isMobile
-            ? 'flex-col absolute top-20 w-56 shadow-custom-shadow p-8 gap-4 right-0  bg-ternary md:hidden'
+            ? 'mobileMenu flex-col absolute w-56 shadow-custom-shadow p-8 gap-4 right-0  bg-bg-secondary md:hidden'
             : 'gap-12 '
         } `}
       >
@@ -64,6 +64,7 @@ export default function Header() {
               <a
                 className="text-text-opacity text-base  hover:text-primary "
                 href={element.href}
+                onClick={(e) => handleClick(e, element.title)}
               >
                 {element.title}
               </a>
@@ -91,6 +92,9 @@ export default function Header() {
   const handleClick = (e, id) => {
     e.preventDefault();
     scrollToSection(id.toLowerCase());
+    if (mobileMenu) {
+      setMobileMenu(false);
+    }
   };
 
   return (
@@ -103,26 +107,12 @@ export default function Header() {
     >
       <BrandHeader />
       <nav className="navigation-container hidden  md:block">
-        <ul className="navigation flex justify-center gap-12">
-          {navigation.map((element, index) => {
-            return (
-              <li key={index}>
-                <a
-                  className="text-text-opacity text-base  hover:text-primary "
-                  href={element.href}
-                  onClick={(e) => handleClick(e, element.title)}
-                >
-                  {element.title}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
+        {renderMenu({ isMobile: false })}
       </nav>
 
       <ThemeToogle />
 
-      <div className="flex gap-4 relative">
+      <div className="h-12 flex gap-4 relative">
         <Button
           title={'Download CV'}
           customClasses={'bg-primary text-ternary  hidden smd:block md:hidden'}
@@ -131,7 +121,7 @@ export default function Header() {
           className="  w-10 text-text-opacity cursor-pointer md:hidden"
           onClick={toggleMenu}
         />
-        {mobileMenu && menu({ isMobile: true })}
+        {mobileMenu && renderMenu({ isMobile: true })}
       </div>
     </header>
   );
