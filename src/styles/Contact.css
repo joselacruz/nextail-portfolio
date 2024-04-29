@@ -6,12 +6,18 @@ position: relative;
  border-radius: 50px;
  cursor: pointer;
  box-shadow: var(--custom-shadow);
- transition: all 0.3s ease-out;
+ transition: all 0.3s ease;
  overflow: hidden;
  @apply bg-ternary
 }
 .button-container:hover{
   overflow: visible;
+  width: 200px;
+  padding-inline-start: 65px; 
+}
+
+.button-container:hover span{
+  opacity: 1;
 }
 
 .button-container .icon-container {
@@ -26,17 +32,13 @@ position: relative;
  position: relative;
 }
 .button-container span{
+  opacity: 0;
   font-size: 20px;
   font-weight: 500;
   line-height: 60px;
   margin-left: 10px;
   text-transform: capitalize;
-}
-
-.button-container:hover{
-    width: 200px;
-    padding-inline-start: 65px;
-
+  transition-delay: 0.3s;
 }
 
 .button-container:active{

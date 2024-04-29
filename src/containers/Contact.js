@@ -21,7 +21,9 @@ export default function Contact() {
               key={index}
               className={`button-container button-container-${index}`}
               onClick={() => {
-                window.open(obj.href, 'blank');
+                setTimeout(() => {
+                  window.open(obj.href, 'blank');
+                }, 400);
               }}
             >
               <div className="icon-container">{obj.render()}</div>
