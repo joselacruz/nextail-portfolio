@@ -10,8 +10,6 @@ export default function SkillsAnimated() {
     threshold: 0.2,
   });
 
-  console.log(isVisible);
-
   const stylesIcon = 'w-8';
 
   const icons = [
@@ -329,7 +327,7 @@ export default function SkillsAnimated() {
           className="skill-container "
         >
           <div className="drop" />
-          <div className="wave-container">
+          <div className="wave-container w-10 h-10 smd:w-14 smd:h-14 ">
             <div className="wave" />
             <div className="icon-skill">{item.render()}</div>
           </div>
