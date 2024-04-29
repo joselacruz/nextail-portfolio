@@ -1,4 +1,5 @@
 import Button from '@common/Button';
+import Circle from '@components/Circle';
 import SkillsAnimated from '@components/SkillsAnimated';
 
 export default function Home() {
@@ -38,7 +39,9 @@ export default function Home() {
           className="relative overflow-hidden w-full flex justify-center  "
           style={{ height: '508px' }}
         >
-          <span className="circle inline-block w-full h-full bg-no-repeat absolute top-3 left-0"></span>
+          <span className="circle  w-full h-full absolute top-3 left-0 flex justify-end">
+            <Circle />
+          </span>
           <img
             src="images/profile.png"
             alt="imagen profile jose lacruz"

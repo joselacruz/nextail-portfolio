@@ -28,11 +28,10 @@
   }
 }
 
-.circle {
-  background-image: url('/circle.svg');
-  background-position: right;
-}
 
+.circle svg {
+  fill: var(--primary);
+}
 .text-xlg {
   @apply text-3xl text-text-opacity  font-sans font-bold mt-1 sm:text-5xl;
 }
