@@ -1,8 +1,17 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import '@styles/SkillsAnimated.css';
+import useObserver from '@hooks/useObserver';
 
 export default function SkillsAnimated() {
+  const [ElementRef, isVisible] = useObserver({
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.2,
+  });
+
+  console.log(isVisible);
+
   const stylesIcon = 'w-8';
 
   const icons = [
@@ -291,22 +300,29 @@ export default function SkillsAnimated() {
       ),
     },
   ];
-  const [indexToShow, setIndexToShow] = useState(0);
+  const [indexToShow, setIndexToShow] = useState(-1);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      if (indexToShow < icons.length - 1) {
-        setIndexToShow((prevIndex) => prevIndex + 1);
-      } else {
-        clearInterval(interval);
-      }
-    }, 100);
+    let interval;
+
+    if (isVisible) {
+      interval = setInterval(() => {
+        if (indexToShow < icons.length - 1) {
+          setIndexToShow((prevIndex) => prevIndex + 1);
+        } else {
+          clearInterval(interval);
+        }
+      }, 100);
+    }
 
     return () => clearInterval(interval);
-  }, [indexToShow, icons.length]);
+  }, [indexToShow, icons.length, isVisible]);
 
   return (
-    <div className="SkillsAnimated">
+    <div
+      className="SkillsAnimated"
+      ref={ElementRef}
+    >
       {icons.slice(0, indexToShow + 1).map((item, index) => (
         <div
           key={index}

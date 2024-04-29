@@ -1,6 +1,6 @@
-'use client';
 import Button from '@common/Button';
 import SkillsAnimated from '@components/SkillsAnimated';
+
 export default function Home() {
   return (
     <section

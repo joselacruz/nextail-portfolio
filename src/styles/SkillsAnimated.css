@@ -6,6 +6,7 @@
   grid-template-columns: repeat(8, 1fr);
   width: 100%;
   position: relative;
+
 }
 
 .skill-container {
@@ -24,7 +25,7 @@
   border-radius: 20px;
   animation-name: drip;
   animation-timing-function: cubic-bezier(1, 0, .91, .19);
-  animation-duration: 2s;
+  animation-duration: 500ms;
   animation-iteration-count: initial;
 }
 
@@ -51,8 +52,8 @@
   border: var(--text-secondary) 7px solid;
   border-radius: 100%;
   animation-name: ripple;
-  animation-delay: 2s;
-  animation-duration: 2s;
+  animation-delay: 500ms;
+  animation-duration: 500ms;
   animation-iteration-count: initial;
 }
 
@@ -93,7 +94,7 @@
   justify-content: center;
   align-items: center;
   animation: fade-in 0.3s ease forwards;
-  animation-delay: 3s;
+  animation-delay: 1000ms;
 }
 
 .wave-container {

@@ -140,7 +140,7 @@ export default function Experience() {
                 <div className="absolute -left-2">
                   <LinedCircle />
                 </div>
-                <p className="mb-1  text-xl text-secondary  font-semibold">
+                <p className="mb-1  text-xl text-text-opacity  font-semibold">
                   {course.title}
                 </p>
                 <p className="text-text-secondary font-semibold text-lg mb-3">
