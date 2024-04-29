@@ -1,4 +1,6 @@
+'use client';
 import Button from '@common/Button';
+import SkillsAnimated from '@components/SkillsAnimated';
 export default function Home() {
   return (
     <section
@@ -31,16 +33,19 @@ export default function Home() {
           />
         </div>
       </div>
-      <div
-        className="relative overflow-hidden w-full flex justify-center  md:w-3/6  "
-        style={{ height: '508px' }}
-      >
-        <span className="circle inline-block w-full h-full bg-no-repeat absolute top-3 left-0"></span>
-        <img
-          src="images/profile.png"
-          alt="imagen profile jose lacruz"
-          className="relative object-cover"
-        />
+      <div className="w-full md:w-3/6 ">
+        <div
+          className="relative overflow-hidden w-full flex justify-center  "
+          style={{ height: '508px' }}
+        >
+          <span className="circle inline-block w-full h-full bg-no-repeat absolute top-3 left-0"></span>
+          <img
+            src="images/profile.png"
+            alt="imagen profile jose lacruz"
+            className="relative object-cover"
+          />
+        </div>
+        <SkillsAnimated />
       </div>
     </section>
   );
