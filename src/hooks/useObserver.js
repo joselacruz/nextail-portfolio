@@ -7,7 +7,6 @@ export default function useObserver(options) {
   function callBack(entries) {
     const [entry] = entries;
     setIsVisible(entry.isIntersecting);
-    console.log(entry);
   }
 
   useEffect(() => {

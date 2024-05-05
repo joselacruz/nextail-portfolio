@@ -32,12 +32,15 @@
 .circle svg {
   fill: var(--primary);
 }
+
 .text-xlg {
-  @apply text-3xl text-text-opacity  font-sans font-bold mt-1 sm:text-5xl;
+  @apply text-3xl text-text-opacity font-sans font-bold mt-1 sm:text-5xl;
 }
+
 .text-large {
   @apply text-lg sm:text-xl;
 }
+
 .IconsSocialNetworks:hover svg {
   @apply fill-slate-50;
 }
@@ -45,16 +48,117 @@
 .active {
   @apply bg-primary text-ternary;
 }
+
 .project-link-container:hover {
   @apply text-primary;
 }
+
 .project-link-container:hover svg {
   @apply fill-primary;
 }
+
 .container-right {
   left: -1px;
 }
 
-.mobileMenu{
-  top:56.5px;
+.mobileMenu {
+  top: 56.5px;
+}
+
+.animateBackInUp {
+  opacity: 0;
+  animation: backInUp 2s ease forwards;
+  transform: translateY(30px);
+}
+
+
+
+.animateBackInRight {
+  opacity: 0;
+  animation: backInRight 2s ease forwards;
+  transform: translateX(1000px);
+}
+
+
+
+.animateZoomIn {
+  opacity: 0;
+  animation: zoomIn 1000ms ease forwards;
+  transform: scale(0.5);
+}
+
+.animateFadeIn {
+  opacity: 0;
+  animation: fadeIn 1000ms ease forwards;
+}
+
+
+
+.animateBounce {
+  animation: bounce 1s ease forwards;
+  transform: translateY(20%);
+
+}
+
+@keyframes backInUp {
+
+  to {
+    opacity: 1;
+    transform: translateY(0px)
+  }
+}
+
+@keyframes backInRight {
+
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+@keyframes fadeIn {
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+
+  80% {
+    transform: translateY(-20%);
+  }
+
+  90% {
+    transform: translateY(0%);
+  }
+
+  95% {
+    transform: translateY(-7%);
+  }
+
+  97% {
+    transform: translateY(0%);
+  }
+
+  99% {
+    transform: translateY(-3%);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

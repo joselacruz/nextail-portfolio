@@ -1,5 +1,6 @@
 'use client';
 import LinedCircle from '@common/LinedCircle';
+import AnimatedVisibleObserver from '@components/AnimatedVisibleObserver';
 import useMediaQuery from '@hooks/useMediaQuery';
 
 const experienceCourses = [
@@ -100,33 +101,38 @@ export default function Experience() {
                 style={{ gridRow: `${rowStart}` }}
                 key={index}
               >
-                {index == 0 && (
-                  <span className="line-top inline-block h-8"></span>
-                )}
-                <div
-                  className={`absolute  ${
-                    alignLeftContainers ? '-right-2' : '-left-2'
-                  }`}
+                <AnimatedVisibleObserver
+                  threshold={0.5}
+                  animationClass={'animateFadeIn'}
                 >
-                  <LinedCircle />
-                </div>
-                <p className="mb-1  text-xl text-text-opacity  font-semibold">
-                  {course.title}
-                </p>
-                <p className="text-text-secondary font-semibold text-lg mb-3">
-                  {course.school}
-                </p>
-                <button
-                  className="bg-primary text-ternary px-6 py-2 rounded-full text-xs font-semibold mb-5 "
-                  onClick={() => {
-                    viewCertificate(course.certificateLink);
-                  }}
-                >
-                  {course.date}
-                </button>
-                <p className="text-text-secondary font-medium">
-                  {course.description}
-                </p>
+                  {index == 0 && (
+                    <span className="line-top inline-block h-8"></span>
+                  )}
+                  <div
+                    className={`absolute  ${
+                      alignLeftContainers ? '-right-2' : '-left-2'
+                    }`}
+                  >
+                    <LinedCircle />
+                  </div>
+                  <p className="mb-1  text-xl text-text-opacity  font-semibold">
+                    {course.title}
+                  </p>
+                  <p className="text-text-secondary font-semibold text-lg mb-3">
+                    {course.school}
+                  </p>
+                  <button
+                    className="bg-primary text-ternary px-6 py-2 rounded-full text-xs font-semibold mb-5 "
+                    onClick={() => {
+                      viewCertificate(course.certificateLink);
+                    }}
+                  >
+                    {course.date}
+                  </button>
+                  <p className="text-text-secondary font-medium">
+                    {course.description}
+                  </p>
+                </AnimatedVisibleObserver>
               </div>
             );
           } else {
@@ -136,25 +142,30 @@ export default function Experience() {
                 className="max-w-lg  pl-11 pb-11 border-l border-gray-300  relative"
                 key={index}
               >
-                <span className="line-top inline-block h-8"></span>
-                <div className="absolute -left-2">
-                  <LinedCircle />
-                </div>
-                <p className="mb-1  text-xl text-text-opacity  font-semibold">
-                  {course.title}
-                </p>
-                <p className="text-text-secondary font-semibold text-lg mb-3">
-                  {course.school}
-                </p>
-                <button
-                  className="bg-primary text-ternary px-6 py-2 rounded-full text-xs font-semibold mb-5"
-                  onClick={() => viewCertificate(course.certificateLink)}
+                <AnimatedVisibleObserver
+                  threshold={0.5}
+                  animationClass={'animateFadeIn'}
                 >
-                  {course.date}
-                </button>
-                <p className="text-text-secondary font-medium">
-                  {course.description}
-                </p>
+                  <span className="line-top inline-block h-8"></span>
+                  <div className="absolute -left-2">
+                    <LinedCircle />
+                  </div>
+                  <p className="mb-1  text-xl text-text-opacity  font-semibold">
+                    {course.title}
+                  </p>
+                  <p className="text-text-secondary font-semibold text-lg mb-3">
+                    {course.school}
+                  </p>
+                  <button
+                    className="bg-primary text-ternary px-6 py-2 rounded-full text-xs font-semibold mb-5"
+                    onClick={() => viewCertificate(course.certificateLink)}
+                  >
+                    {course.date}
+                  </button>
+                  <p className="text-text-secondary font-medium">
+                    {course.description}
+                  </p>
+                </AnimatedVisibleObserver>
               </div>
             );
           }
