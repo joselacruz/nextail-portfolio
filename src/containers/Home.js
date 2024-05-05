@@ -23,7 +23,7 @@ export default function Home() {
         >
           <h2 className="text-text-secondary mb-5 text-large font-medium">
             Front-end
-            <span className="text-secondary font-bold ">Developer</span>
+            <span className="text-secondary font-bold ml-2 ">Developer</span>
           </h2>
         </AnimatedVisibleObserver>
 
