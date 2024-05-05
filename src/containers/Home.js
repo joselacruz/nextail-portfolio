@@ -1,9 +1,7 @@
-'use client';
-import Button from '@common/Button';
 import AnimatedVisibleObserver from '@components/AnimatedVisibleObserver';
 import Circle from '@components/Circle';
+import HomeActions from '@components/HomeActions';
 import SkillsAnimated from '@components/SkillsAnimated';
-import { scrollToSection } from '@utils/scrollToSection';
 
 export default function Home() {
   return (
@@ -40,27 +38,7 @@ export default function Home() {
             improve user experience.
           </p>
         </AnimatedVisibleObserver>
-        <AnimatedVisibleObserver
-          animationClass={'animateBackInUp'}
-          animationDelay={'800ms'}
-        >
-          <div>
-            <Button
-              title={'Contact Me'}
-              customClasses={'bg-primary text-ternary mr-4'}
-              handleClick={() => {
-                scrollToSection('contact');
-              }}
-            />
-            <Button
-              title={'Learn More'}
-              customClasses={'bg-secondary text-ternary '}
-              handleClick={() => {
-                scrollToSection('about');
-              }}
-            />
-          </div>
-        </AnimatedVisibleObserver>
+        <HomeActions />
       </div>
 
       <div className="w-full mt-64 md:w-3/6 md:mt-0 ">
