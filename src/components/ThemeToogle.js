@@ -16,8 +16,12 @@ export default function ThemeToogle() {
       className="cursor-pointer"
       onClick={toogleTheme}
     >
-      {theme == 'dark' && <SunIcon className="w-8 text-text-secondary" />}
-      {theme !== 'dark' && <MoonIcon className="w-8 text-text-secondary" />}
+      {theme == 'dark' && (
+        <SunIcon className="w-8 text-text-secondary hover:fill-primary" />
+      )}
+      {theme !== 'dark' && (
+        <MoonIcon className="w-8 text-text-secondary hover:fill-primary" />
+      )}
     </div>
   );
 }
