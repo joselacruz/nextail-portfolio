@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Button from '@common/Button';
 import BrandHeader from '@components/BrandHeader';
 import ThemeToogle from './ThemeToogle';
+import { scrollToSection } from '@utils/scrollToSection';
 
 export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -81,13 +82,6 @@ export default function Header() {
   function toggleMenu() {
     setMobileMenu(!mobileMenu);
   }
-
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   const handleClick = (e, id) => {
     e.preventDefault();
