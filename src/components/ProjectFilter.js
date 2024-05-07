@@ -8,7 +8,7 @@ export default function ProjectFilter({ updateProjects }) {
   const BtnFilter = ({ title }) => {
     return (
       <button
-        className={`text-text-secondary px-6 py-2 rounded-full mr-2.5 ${
+        className={`text-text-secondary px-6 py-2 rounded-full ${
           filter == title.toLowerCase() ? 'active' : ''
         } hover:bg-primary hover:text-ternary`}
         onClick={() => handleFilter(title.toLowerCase())}
@@ -28,7 +28,7 @@ export default function ProjectFilter({ updateProjects }) {
   };
 
   return (
-    <div className="mb-12">
+    <div className="mb-12 flex justify-center flex-wrap ">
       <BtnFilter
         title="All"
         active
