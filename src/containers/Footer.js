@@ -1,6 +1,8 @@
+'use client';
 import AnimatedVisibleObserver from '@components/AnimatedVisibleObserver';
 import IconsSocialNetworks from '@components/IconsSocialNetworks';
 import { CodeBracketSquareIcon } from '@heroicons/react/24/solid';
+import { scrollToSection } from '@utils/scrollToSection';
 
 export default function Footer() {
   const navigation = [
@@ -57,6 +59,9 @@ export default function Footer() {
                   <li
                     key={index}
                     className="text-text-dark font-medium cursor-pointer pb-2"
+                    onClick={() => {
+                      scrollToSection(element.title.toLocaleLowerCase());
+                    }}
                   >
                     {element.title}
                   </li>
@@ -82,7 +87,7 @@ export default function Footer() {
               </a>
             </p>
             <a
-              href=""
+              href="https://github.com/joselacruz/nextail-portfolio"
               className="text-text-dark font-medium flex gap-1"
             >
               <CodeBracketSquareIcon className="w-6 h-6 inline" />
