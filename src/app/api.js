@@ -93,11 +93,20 @@ const projects = [
   {
     title: 'Interior consultant',
     content:
-      'In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io',
+      'In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io.',
     group: 'vanillajs',
     img: 'https://i.ibb.co/NYvXK6t/interior.png',
     code: 'https://github.com/joselacruz/interior-consultant',
     live: 'https://joselacruz.github.io/interior-consultant/dev.html',
+  },
+  {
+    title: 'Nextail Portfolio',
+    content:
+      'This is a portfolio created with Nextjs and styled using Tailwind CSS. The minimalist and modern design offers an attractive and responsive user experience.',
+    group: 'nextjs',
+    img: 'https://i.ibb.co/NmBXnQD/nextail.png',
+    code: 'https://github.com/joselacruz/nextail-portfolio',
+    live: 'https://nextail-portfolio.vercel.app',
   },
 ];
 export const getProject = {
