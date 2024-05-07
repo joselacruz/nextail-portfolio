@@ -36,7 +36,7 @@ export default function About() {
             Connect With Me
           </h3>
           <p className="text-text-secondary text-base mb-10 font-medium">
-            I'd be delighted to connect with you and discuss more about my
+            I&apos;d be delighted to connect with you and discuss more about my
             projects and experiences! Feel free to reach out to me through any
             of the following channels.
           </p>

@@ -27,7 +27,7 @@ export default function AnimatedVisibleObserver({
     } else {
       refContainer.classList.add('opacity-0');
     }
-  }, [isVisible]);
+  }, [isVisible, animationClass, animationDelay, refElement]);
 
   return <div ref={refElement}>{children}</div>;
 }

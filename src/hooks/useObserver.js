@@ -10,10 +10,11 @@ export default function useObserver(options) {
   }
 
   useEffect(() => {
+    const elementToObserve = ElementRef.current;
     const observer = new IntersectionObserver(callBack, options);
-    if (ElementRef.current) observer.observe(ElementRef.current);
+    if (elementToObserve) observer.observe(elementToObserve);
     return () => {
-      if (ElementRef.current) observer.unobserve(ElementRef.current);
+      if (elementToObserve) observer.unobserve(elementToObserve);
     };
   }, [ElementRef, options]);
 

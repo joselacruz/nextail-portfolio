@@ -2,6 +2,8 @@ import AnimatedVisibleObserver from '@components/AnimatedVisibleObserver';
 import Circle from '@components/Circle';
 import HomeActions from '@components/HomeActions';
 import SkillsAnimated from '@components/SkillsAnimated';
+import Image from 'next/image';
+import profileImagen from '/public/images/profile.png';
 
 export default function Home() {
   return (
@@ -54,11 +56,15 @@ export default function Home() {
             <span className="circle  w-full h-full absolute top-3 left-0 flex justify-end">
               <Circle />
             </span>
-            <img
-              src="images/profile.png"
-              alt="imagen profile jose lacruz"
+            <Image
+              src={profileImagen}
               className="relative object-cover"
-            />
+              style={{ width: 'auto', height: 'auto' }}
+              alt="imagen profile jose lacruz"
+              width={500}
+              height={500}
+              priority={true}
+            ></Image>
           </div>
         </AnimatedVisibleObserver>
         <SkillsAnimated />

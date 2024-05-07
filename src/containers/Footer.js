@@ -35,7 +35,7 @@ export default function Footer() {
         >
           <section className="mb-6  sm:mb-0">
             <h3 className="text-4xl text-ternary font-bold mb-5">
-              Let's Talk!
+              Let&apos;s Talk!
             </h3>
             <p className="text-text-dark text-xl font-bold mb-2">
               Contact Info

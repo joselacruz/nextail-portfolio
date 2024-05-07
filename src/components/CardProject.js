@@ -1,6 +1,7 @@
 import { EyeIcon } from '@heroicons/react/24/solid';
 import { svgArray } from '@utils/svgList';
 import AnimatedVisibleObserver from './AnimatedVisibleObserver';
+import Image from 'next/image';
 
 export default function CardProject({ project }) {
   const svgLinkedin = svgArray.filter((svg) => svg.id == 'github')[0];
@@ -24,11 +25,14 @@ export default function CardProject({ project }) {
     >
       <article className="max-w-lg px-4 mb-12">
         <figure className="mb-8 rounded-md overflow-hidden">
-          <img
+          <Image
+            width={500}
+            height={500}
             src={image}
             alt={`imagen ${title}`}
-            className="object-cover"
-          />
+            className="object-contain"
+            priority={false}
+          ></Image>
         </figure>
         <h3 className="text-text-opacity text-xl mb-3 hover:text-primary hover:cursor-pointer font-semibold">
           {title}
