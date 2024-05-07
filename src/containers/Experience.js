@@ -135,7 +135,7 @@ export default function Experience() {
                 </AnimatedVisibleObserver>
               </div>
             );
-          } else {
+          } else if (wMax960Px === false) {
             return (
               // Card Courses movil
               <div
