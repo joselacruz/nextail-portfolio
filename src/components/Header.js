@@ -74,6 +74,7 @@ export default function Header() {
         })}
         <ButtonDownload
           className={'bg-primary text-sm  text-ternary  smd:hidden'}
+          onClick={toggleMenu}
         />
       </ul>
     );

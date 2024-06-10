@@ -1,8 +1,10 @@
 import Button from '@common/Button';
 
-export default function ButtonDownload({ className }) {
+export default function ButtonDownload({ className, onClick }) {
   function handleDownload() {
     window.open('/Jose Lacruz Resume.pdf');
+
+    onClick?.();
   }
   return (
     <Button
