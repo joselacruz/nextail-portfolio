@@ -6,7 +6,8 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Jose Lacruz',
-  description: 'Create By Jose Lacruz',
+  description:
+    'I am José Lacruz, a passionate frontend developer with over 2 years of experience specializing in HTML, CSS, JavaScript and React.',
   openGraph: {
     images: 'https://i.ibb.co/cFV8CFF/studio-image-2.jpg',
   },
