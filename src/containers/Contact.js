@@ -13,7 +13,7 @@ export default function Contact() {
         animationClass={'animateBounce'}
         threshold={1}
       >
-        <div className="max-w-xl px-4 justify-self-center mb-12">
+        <div className="max-w-2xl px-4 justify-self-center mb-12">
           <p className="text-primary font-bold text-center text-lg ">
             Contact With Me
           </p>

@@ -5,7 +5,7 @@ import '@styles/globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'NexTail Portfolio',
+  title: 'Jose Lacruz',
   description: 'Create By Jose Lacruz',
   openGraph: {
     images: 'https://i.ibb.co/cFV8CFF/studio-image-2.jpg',
