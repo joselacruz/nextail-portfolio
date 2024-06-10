@@ -36,12 +36,12 @@ export default function Home() {
           >
             <p className="text-text-secondary mb-12 font-medium">
               I am José Lacruz, a passionate frontend developer with over 2
-              years of experience specializing in HTML, CSS, and JavaScript. I
-              like designing and developing innovative and accessible solutions,
-              having created personal projects that help me learn more about web
-              technologies. My goal is to bring my creativity and technical
-              expertise to a dynamic team that values continuous innovation and
-              code quality.
+              years of experience specializing in HTML, CSS, JavaScript and
+              React. I like designing and developing innovative and accessible
+              solutions, having created personal projects that help me learn
+              more about web technologies. My goal is to bring my creativity and
+              technical expertise to a dynamic team that values continuous
+              innovation and code quality.
             </p>
           </AnimatedVisibleObserver>
           <HomeActions />

@@ -1,10 +1,10 @@
 'use client';
 import { Bars3Icon } from '@heroicons/react/24/solid';
 import { useEffect, useState } from 'react';
-import Button from '@common/Button';
 import BrandHeader from '@components/BrandHeader';
 import ThemeToogle from './ThemeToogle';
 import { scrollToSection } from '@utils/scrollToSection';
+import ButtonDownload from './ButtonDownload';
 
 export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -72,9 +72,8 @@ export default function Header() {
             </li>
           );
         })}
-        <Button
-          title={'Download CV'}
-          customClasses={'bg-primary text-sm  text-ternary  smd:hidden'}
+        <ButtonDownload
+          className={'bg-primary text-sm  text-ternary  smd:hidden'}
         />
       </ul>
     );
@@ -107,9 +106,8 @@ export default function Header() {
       <ThemeToogle />
 
       <div className="h-12 flex gap-4 relative">
-        <Button
-          title={'Download CV'}
-          customClasses={'bg-primary text-ternary  hidden smd:block md:hidden'}
+        <ButtonDownload
+          className={'bg-primary text-ternary  hidden smd:block md:hidden'}
         />
         <Bars3Icon
           className="  w-10 text-text-opacity cursor-pointer md:hidden"
