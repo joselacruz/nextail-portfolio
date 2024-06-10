@@ -88,7 +88,7 @@ export const svgArray = [
   },
   {
     id: 'email',
-    href: 'malito:joselacruzperez@gmail.com',
+    href: 'mailto:joselacruzperez@gmail.com',
     render: () => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
